@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.orange, .grey, .red, .blue {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+}
+
+.orange {background-color: orange;}
+.blue {background-color: blue;}
+.grey {background-color: grey;}
+.red {background-color: red;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeFast</title>
+  <style>
+    body { background-color: black; color: white; }
+    span { font-size: 24px; }
+    .correct { color: limegreen; }
+    .wrong { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Welcome To TypeFast</h1>
+  <p>Try Typing a - z as fast as you can!!</p>
+  
+  <div id="letters">a b c d e f g h i j k l m</div>
+  <div id="letters2">n o p q r s t u v w x y z</div>
+  <p id="result"></p>
+  <script>
+    const spans = [];
+    ["letters", "letters2"].forEach((id) => {
+      const container = document.getElementById(id);
+      const text = container.textContent;
+      container.innerHTML = "";
+      for(let i = 0; i < text.length; i++) {
+        const span = document.createElement("span");
+        span.textContent = text[i];
+        container.appendChild(span);
+        if(text[i] !== " ") {
+          spans.push(span);
+        }
+      }
+    });
+
+    let index = 0;
+    let startTime = null;
+    document.addEventListener("keydown", (e) => {
+      console.log(e.key);
+    });
+  </script>
+</body>
+</html>
