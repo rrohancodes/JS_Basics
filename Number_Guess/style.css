@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #e8eef4;
+  font-family: system-ui, sans-serif;
+  color: #14213d;
+}
+
+.game {
+  width: 90%;
+  max-width: 420px;
+  padding: 28px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #5b6b82;
+}
+
+.message {
+  min-height: 1.5em;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.message.wrong {
+  color: #c8553d;
+}
+
+.message.win {
+  color: #2e8b57;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #c5d1de;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2a6f97;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f587a;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info {
+  margin: 8px 0;
+  color: #5b6b82;
+}
+
+#restart-btn {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.mod {
+  margin-top: 12px;
+  width: 100%;
+}
